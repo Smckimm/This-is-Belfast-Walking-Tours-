@@ -1,129 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>This is Belfast Walking Tour</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-  /* ...existing styles... */
-  .logo {
-    width: 200px;       /* bigger logo */
-    max-height: 200px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 10px;
-  }
-  .gallery img {
-    width: 100%;        /* span container width */
-    max-width: none;    /* remove width limit */
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .gallery {
-    display: block;     /* single column gallery */
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Belfast Walking Tours</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+        header img {
+            max-width: 200px;
+        }
+        h1 {
+            color: white;
+        }
+        .tripadvisor-button {
+            display: inline-block;
+            background-color: #00af87;
+            padding: 10px 20px;
+            margin: 20px auto;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .tripadvisor-button img {
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.jpg" alt="This is Belfast Logo" class="logo" />
-    <h1>This is Belfast Walking Tour</h1>
-    <p>Explore Belfast’s story with a local guide who lived it</p>
-  </header>
 
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#info">Tour Info</a>
-    <a href="#testimonials">Reviews</a>
-    <a href="#faqs">FAQs</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+    <img src="logo.png" alt="This is Belfast Walking Tours Logo">
+    <h1>Welcome to This is Belfast Walking Tours</h1>
+</header>
 
-  <section id="overview">
-    <h2>Tour Overview</h2>
-    <p>My name is Stevie — born, bred and proud to hail from the historic and unique city of Belfast. 
-    I have a passion for history, culture and notable people all of which Belfast has in abundance. 
-    Having grown up with the Troubles – being born in 1969 – I have the lived experience of what our city went through and how it has risen to rightly be one of the premium city breaks in the world! 
-    My tour also captures the origins of the city from the humble banks of the hidden River Farset through to rebellions, becoming a powerhouse of the industrial revolution including the most famous shipyard and ship in the world.
-    My own history is intertwined with Belfast and I will be your storyteller of this awesome city with a personal touch and the world-famous Belfast humour — the craic! 
-    Being a tour guide is an honour with one of the best aspects being hearing your stories! 
-    I can also provide a running / jogging tour for those who like a tour that burns extra calories – details on request.
-    It’s my mission to ensure an informative and engaging experience for all with a good dose of the legendary Belfast welcome.</p>
+<p>Hi, I’m <strong>Stevie</strong>, your local guide. Discover the history, culture, and unique charm of Belfast with me.</p>
 
-    <p><strong>Price:</strong> £15</p>
-    <p><strong>Availability:</strong> On request – generally weekends and evenings.</p>
-    <p><strong>Tel:</strong> 07803 578181<br><strong>Email:</strong> <a href="mailto:thisisbelfasttours@gmail.com">thisisbelfasttours@gmail.com</a></p>
-  </section>
+<!-- TripAdvisor Button -->
+<a class="tripadvisor-button" href="https://www.tripadvisor.co.uk/AttractionProductReview-g186470-d33370438-Belfast_History_and_Culture_Walk-Belfast_Northern_Ireland.html" target="_blank">
+    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="TripAdvisor Logo">
+    Read Reviews on TripAdvisor
+</a>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="albert-clock.jpg" alt="Albert Clock Belfast" />
-      <img src="city-hall.jpg" alt="Belfast City Hall" />
-      <img src="titanic-belfast.jpg" alt="Titanic Belfast Museum" />
-      <img src="titanic.jpg" alt="Titanic ship" />
-      <img src="belfast-castle.jpg" alt="Belfast Castle" />
-      <img src="belfast-map.jpg" alt="Map of Belfast" />
-      <img src="troubles.jpg" alt="Troubles-era mural" />
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2>What People Say</h2>
-    <div class="testimonial">
-      <p><strong>Sarah, Dublin:</strong> “Best walking tour I’ve ever done – a must for Belfast!”</p>
-    </div>
-    <div class="testimonial">
-      <p><strong>James, USA:</strong> “Powerful insights, local stories – unforgettable.”</p>
-    </div>
-    <div class="testimonial">
-      <p><strong>Liam, Belfast:</strong> “You think you know the city… until you walk it with this guide.”</p>
-    </div>
-  </section>
-
-  <section id="faqs">
-    <h2>FAQs</h2>
-    <div class="faq">
-      <strong>Do I need to book in advance?</strong>
-      <p>Booking in advance is recommended to secure your spot, especially on weekends.</p>
-    </div>
-    <div class="faq">
-      <strong>What should I wear?</strong>
-      <p>Wear comfortable shoes and check the weather forecast — Belfast can be rainy!</p>
-    </div>
-    <div class="faq">
-      <strong>Is the tour suitable for children?</strong>
-      <p>Yes! Kids are welcome if accompanied by an adult.</p>
-    </div>
-    <div class="faq">
-      <strong>Are private tours available?</strong>
-      <p>Yes, private or corporate tours can be arranged — just get in touch!</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Book This Tour</h2>
-    <p>
-  <strong>Email:</strong> 
-  <a href="mailto:thisisbelfasttours@gmail.com?subject=Tour Booking Request&body=Name:%0D%0AEmail:%0D%0ADate:%0D%0AGroup Size:%0D%0AMessage:">
-    thisisbelfasttours@gmail.com
-  </a><br>
-  <strong>Tel:</strong> 07803 578181
-</p>
-
-<p>
-  <a class="btn" href="booking.html">📅 Book a Tour</a>
-  <a class="btn" href="mailto:thisisbelfasttours@gmail.com?subject=Tour Booking Request&body=Name:%0D%0AEmail:%0D%0ADate:%0D%0AGroup Size:%0D%0AMessage:" style="margin-left: 10px;">📧 Email Booking Request</a>
-</p>
-    <a class="btn" >Book Now</a><p><a class="btn" href="booking.html">📅 Book a Tour</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 This is Belfast Walking Tours. All rights reserved.</p>
-  </footer>
 </body>
 </html>
