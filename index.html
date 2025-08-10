@@ -1,147 +1,79 @@
-<header id="main-header" style="position:sticky; top:0; z-index:1000; background-color:#333; color:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.3); transition: background-color 0.5s ease, backdrop-filter 0.5s ease, padding 0.3s ease, transform 0.4s ease;">
-    <style>
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>This is Belfast Walking Tours</title>
+  <link rel="icon" href="favicon.png" type="image/png"/>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background:#f4f4f4; line-height:1.6; }
+    header { text-align: center; padding: 20px; background: #2d3e50; color: white; }
+    header img.logo { max-width: 200px; height: auto; }
+    nav a { margin: 0 10px; color: white; text-decoration: none; }
+    .tripadvisor { display: inline-flex; align-items: center; background-color: #00af87; color: white; padding: 10px 18px; border-radius: 5px; text-decoration: none; font-weight: bold; margin: 15px auto; }
+    .tripadvisor img { height: 24px; margin-right: 8px; }
+    section { max-width: 900px; margin: 20px auto; background:white; padding: 20px; border-radius: 8px; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .gallery img { width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover; }
+    .btn { display: inline-block; background: #1b2a38; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 10px 0; }
+    footer { text-align: center; padding: 20px; background: #1b2a38; color: white; margin-top: 30px; }
+  </style>
+</head>
+<body>
 
-        .logo-img {
-            height: 80px;
-            margin-right: 15px;
-            transition: height 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
-            animation: pulse 3s infinite;
-        }
-        .logo-img:hover {
-            transform: scale(1.08);
-        }
-        
-        .tripadvisor-btn {
-            display:inline-flex;
-            align-items:center;
-            background-color:#34E0A1;
-            color:#000;
-            padding:10px 18px;
-            border-radius:6px;
-            font-weight:bold;
-            text-decoration:none;
-            font-size:16px;
-            box-shadow:0px 3px 5px rgba(0,0,0,0.2);
-            transition: all 0.3s ease, opacity 0.5s ease;
-            animation: pulse 2s infinite;
-            opacity: 1;
-        }
-        .tripadvisor-btn img {
-            height:22px;
-            margin-right:8px;
-            vertical-align:middle;
-            transition: transform 0.3s ease;
-        }
-        .tripadvisor-btn:hover img {
-            transform: scale(1.05);
-        }
-        .tripadvisor-text {
-            white-space: nowrap;
-            transition: opacity 0.3s ease, width 0.3s ease;
-        }
+  <header>
+    <img src="logo.jpg" alt="This is Belfast Walking Tours" class="logo"/>
+    <h1>This is Belfast Walking Tours</h1>
+    <p>My name is <strong>Stevie</strong>, born, bred and proud to hail from Belfast.</p>
+    <!-- TripAdvisor Button Top -->
+    <a class="tripadvisor" href="https://www.tripadvisor.co.uk/AttractionProductReview-g186470-d33370438-Belfast_History_and_Culture_Walk-Belfast_Northern_Ireland.html" target="_blank">
+      <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="TripAdvisor logo"/>
+      Read Our Reviews on TripAdvisor
+    </a>
+  </header>
 
-        @media (max-width: 600px) {
-            .logo-img { height: 50px; }
-            .tripadvisor-btn {
-                padding: 6px 12px;
-                font-size: 14px;
-            }
-            .tripadvisor-btn img {
-                height: 18px;
-                margin-right: 6px;
-            }
-        }
-
-        /* Shrink effect with slide */
-        .shrink {
-            padding: 5px 20px !important;
-            background-color: rgba(51, 51, 51, 0.85);
-            backdrop-filter: blur(4px);
-            transform: translateY(-5px);
-        }
-        .shrink .logo-img {
-            height: 50px;
-            opacity: 0.9;
-        }
-        .shrink h1 {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            transition: opacity 0.5s ease;
-        }
-        .shrink .tripadvisor-btn {
-            padding:6px;
-            font-size:0;
-            width:auto;
-            opacity: 0.9;
-        }
-        .shrink .tripadvisor-btn img {
-            height:22px;
-            margin-right:0;
-        }
-        .shrink .tripadvisor-text {
-            opacity: 0;
-            width: 0;
-        }
-        .shrink .tripadvisor-btn:hover {
-            padding: 6px 12px;
-            font-size: 14px;
-            opacity: 1;
-        }
-        .shrink .tripadvisor-btn:hover img {
-            margin-right:6px;
-        }
-        .shrink .tripadvisor-btn:hover .tripadvisor-text {
-            opacity:1;
-            width:auto;
-        }
-
-        /* Smooth slide down when returning to top */
-        #main-header {
-            transform: translateY(0);
-            transition: transform 0.4s ease, background-color 0.5s ease, backdrop-filter 0.5s ease, padding 0.3s ease;
-        }
-    </style>
-
-    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; padding:10px 20px;">
-        <div style="display:flex; align-items:center; flex:1; min-width:250px; justify-content:center;">
-            <img src="images/logo.png" alt="This is Belfast Walking Tours" class="logo-img">
-            <h1 style="margin:0; font-size:1.6rem; text-align:center; transition: opacity 0.5s ease;">This is Belfast Walking Tours</h1>
-        </div>
-
-        <div style="margin-top:10px; flex:1; min-width:250px; display:flex; justify-content:center;">
-            <a href="https://www.tripadvisor.co.uk/AttractionProductReview-g186470-d33370438-Belfast_History_and_Culture_Walk-Belfast_Northern_Ireland.html" target="_blank" class="tripadvisor-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tripadvisor_Logo_circle-green_horizontal-lockup_registered_RGB.svg/2560px-Tripadvisor_Logo_circle-green_horizontal-lockup_registered_RGB.svg.png" 
-                     alt="TripAdvisor">
-                <span class="tripadvisor-text">Book Now</span>
-            </a>
-        </div>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="albert-clock.jpg" alt="Albert Clock"/>
+      <img src="city-hall.jpg" alt="City Hall"/>
+      <img src="titanic-belfast.jpg" alt="Titanic Belfast"/>
+      <img src="titanic.jpg" alt="Titanic"/>
+      <img src="belfast-castle.jpg" alt="Belfast Castle"/>
+      <img src="belfast-map.jpg" alt="Map of Belfast"/>
+      <img src="troubles.jpg" alt="The Troubles"/>
     </div>
+  </section>
 
-    <script>
-        let lastScroll = 0;
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('main-header');
-            let currentScroll = window.scrollY;
+  <section id="overview">
+    <h2>Tour Overview</h2>
+    <p>I have a passion for history, culture and notable people… (rest of your original overview content here)</p>
+    <!-- Booking Link Button -->
+    <a class="btn" href="booking.html">📅 Book a Tour</a>
+  </section>
 
-            if (currentScroll > 50) {
-                header.classList.add('shrink');
-            } else {
-                header.classList.remove('shrink');
-            }
+  <section id="testimonials">
+    <h2>What People Say</h2>
+    <p><em>“Best walking tour I’ve ever done – a must for Belfast!”</em></p>
+    <p><em>“Powerful insights, local stories – unforgettable.”</em></p>
+  </section>
 
-            // Detect scroll direction
-            if (currentScroll > lastScroll && currentScroll > 80) {
-                header.style.transform = 'translateY(-5px)'; // stays slightly up
-            } else {
-                header.style.transform = 'translateY(0)'; // slides back down
-            }
+  <section id="faqs">
+    <h2>FAQs</h2>
+    <p><strong>Do I need to book in advance?</strong> Booking in advance is recommended to secure your spot, especially on weekends.</p>
+    <p><strong>What should I wear?</strong> Wear comfortable shoes and check the weather — Belfast can be rainy!</p>
+    <p><strong>Is the tour suitable for children?</strong> Yes! Kids are welcome if accompanied by an adult.</p>
+    <p><strong>Are private tours available?</strong> Yes, private or corporate tours can be arranged — just get in touch!</p>
+  </section>
 
-            lastScroll = currentScroll;
-        });
-    </script>
-</header>
+  <footer>
+    <!-- TripAdvisor Button Bottom -->
+    <a class="tripadvisor" href="https://www.tripadvisor.co.uk/AttractionProductReview-g186470-d33370438-Belfast_History_and_Culture_Walk-Belfast_Northern_Ireland.html" target="_blank">
+      <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="TripAdvisor logo"/>
+      Read Our Reviews on TripAdvisor
+    </a>
+    <p>&copy; 2025 This is Belfast Walking Tours</p>
+  </footer>
+
+</body>
+</html>
