@@ -1,141 +1,84 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is Belfast Walking Tours</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #004d40;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header img {
-            max-width: 150px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        nav {
-            background: #00695c;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-        }
-        .hero-text {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0,0,0,0.6);
-            padding: 15px 25px;
-            border-radius: 5px;
-            font-size: 1.5rem;
-        }
-        .content {
-            padding: 20px;
-            background: white;
-            max-width: 1000px;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 6px;
-        }
-        .btn {
-            display: inline-block;
-            background: #ff9800;
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
-        .btn:hover {
-            background: #e68900;
-        }
-        footer {
-            text-align: center;
-            background: #004d40;
-            color: white;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.jpg" alt="This is Belfast Walking Tours Logo">
-    <h1>This is Belfast Walking Tours</h1>
-</header>
+    <!-- Header -->
+    <header>
+        <img src="logo.jpg" alt="This is Belfast Walking Tours Logo" class="logo">
+        <h1>This is Belfast Walking Tours</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="booking.html">Book Now</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="https://smckimm.github.io/This-is-Belfast-Walking-Tours/booking.html">Book Now</a>
-</nav>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Tour</h2>
+        <p>My name is Stevie, born, bred and proud to hail from the historic and unique city of Belfast.</p>
+        <p>I have a passion for history, culture and notable people all of which Belfast has in abundance. Having grown up with the troubles - being born in 1969 - I have the lived experience of what our city went through and how it has risen to rightly be one of the premium city breaks in the world! My tour also captures the origins of the city from the humble banks of the hidden River Farset through to rebellions, becoming a powerhouse of the industrial revolution including the most famous shipyard and ship in the world. My own history is intertwined with Belfast and I will be your storyteller of this awesome city with a personal touch and the world famous Belfast humour - the craic! Being a tour guide is an honour with one of the best aspects being hearing your stories!</p>
+        <p>It's my mission to ensure an informative and engaging experience for all with a good dose of the legendary Belfast welcome. I am fully qualified OCN Level 2 and a member of Tour Guides N Ireland providing insurance cover for your peace of mind. See you at the Big Fish!</p>
+    </section>
 
-<div class="hero">
-    <img src="belfast-map.jpg" alt="Belfast City Map">
-    <div class="hero-text">Discover Belfast's Story with Stevie</div>
-</div>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="albert-clock.jpg" alt="Albert Clock">
+            <img src="city-hall.jpg" alt="Belfast City Hall">
+            <img src="titanic-belfast.jpg" alt="Titanic Belfast">
+            <img src="titanic.jpg" alt="Titanic Ship">
+            <img src="belfast-castle.jpg" alt="Belfast Castle">
+            <img src="belfast-map.jpg" alt="Belfast Map">
+            <img src="troubles.jpg" alt="Troubles Mural">
+        </div>
+    </section>
 
-<section id="about" class="content">
-    <h2>About the Tour</h2>
-    <p>My name is Stevie, born, bred and proud to hail from the historic and unique city of Belfast.</p>
-    <p>I have a passion for history, culture and notable people all of which Belfast has in abundance. Having grown up with the troubles - being born in 1969 - I have the lived experience of what our city went through and how it has risen to rightly be one of the premium city breaks in the world! My tour also captures the origins of the city from the humble banks of the hidden River Farset through to rebellions, becoming a powerhouse of the industrial revolution including the most famous shipyard and ship in the world.</p>
-    <p>My own history is intertwined with Belfast and I will be your storyteller of this awesome city with a personal touch and the world-famous Belfast humour - the craic! Being a tour guide is an honour with one of the best aspects being hearing your stories!</p>
-    <p>It's my mission to ensure an informative and engaging experience for all with a good dose of the legendary Belfast welcome. I am fully qualified OCN Level 2 and a member of Tour Guides N Ireland providing insurance cover for your peace of mind. See you at the Big Fish!</p>
-    <a href="https://smckimm.github.io/This-is-Belfast-Walking-Tours/booking.html" class="btn">Book Now</a>
-</section>
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <p>"A fantastic tour with Stevie! His knowledge and humour made the experience unforgettable."</p>
+        <p>"The best walking tour in Belfast. A must-do for visitors!"</p>
+        <p>"Stevie's storytelling brought the city's history to life. Highly recommended!"</p>
+    </section>
 
-<section id="gallery" class="content">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="albert-clock.jpg" alt="Albert Clock">
-        <img src="city-hall.jpg" alt="Belfast City Hall">
-        <img src="titanic-belfast.jpg" alt="Titanic Belfast">
-        <img src="titanic.jpg" alt="Titanic Shipyard">
-        <img src="belfast-castle.jpg" alt="Belfast Castle">
-        <img src="troubles.jpg" alt="Troubles Mural">
-    </div>
-</section>
+    <!-- FAQs Section -->
+    <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Where does the tour start?</strong> The tour begins at the Big Fish in Belfast.</p>
+        <p><strong>How long is the tour?</strong> Approximately 2 hours.</p>
+        <p><strong>What should I bring?</strong> Comfortable shoes, a raincoat (just in case), and your curiosity!</p>
+    </section>
 
-<footer>
-    &copy; 2025 This is Belfast Walking Tours - All Rights Reserved
-</footer>
+    <!-- Map Section -->
+    <section id="map">
+        <h2>Tour Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.73774687919!2d-5.92379498396313!3d54.601424980263875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486108539b0cc5a1%3A0xb77c5b9429d21aa4!2sThe%20Big%20Fish!5e0!3m2!1sen!2suk!4v1670000000000!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Contact & Booking -->
+    <section id="contact">
+        <h2>Book Your Tour</h2>
+        <p><a href="booking.html" class="button">Click here to book your tour</a></p>
+    </section>
+
+    <!-- Footer with TripAdvisor Link -->
+    <footer>
+        <p>&copy; 2025 This is Belfast Walking Tours</p>
+        <p><a href="https://www.tripadvisor.co.uk/Attraction_Review-g186470-d25850790-Reviews-This_is_Belfast_Walking_Tours-Belfast_Northern_Ireland.html" target="_blank">
+            See us on TripAdvisor
+        </a></p>
+    </footer>
 
 </body>
 </html>
