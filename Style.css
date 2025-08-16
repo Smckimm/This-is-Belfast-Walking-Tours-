@@ -1,88 +1,83 @@
-/* Make logo bigger */
-.logo {
-  width: 250px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Style logo text */
-.logo-text {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 10px 0 30px;
-  font-weight: bold;
-}
-
-/* Gallery container */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  max-width: 900px;
-  margin: 0 auto 50px;
-}
-
-/* Crop images */
-.gallery img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-}
-
-/* General body and section styling */
+/* General Styles */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: #f9f9f9;
-  margin: 0;
-  padding: 0;
   color: #333;
 }
 
-section {
-  background: white;
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 0.05);
-}
-
-/* Navigation */
-nav {
+h1, h2 {
+  color: #0a5c36;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #2d3e50;
-  font-weight: 600;
+p {
+  line-height: 1.6;
 }
 
-nav a:hover {
-  color: #d44333;
-}
-
-/* Button style */
-.button {
-  background: #2d3e50;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-}
-
-/* Footer style */
-footer {
-  background: #1b2a38;
-  color: white;
+/* Header */
+header {
+  background: #0a5c36;
   text-align: center;
   padding: 20px;
-  margin-top: 30px;
+}
+
+header img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #0a5c36;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #087a4d;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  background: #0a5c36;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
