@@ -1,47 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Tour | This is Belfast Walking Tours</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Book a Tour</h1>
-    <p>Submit your booking request below</p>
-  </header>
-
-  <section>
-    <form action="mailto:thisisbelfasttours@gmail.com" method="POST" enctype="text/plain">
-      <label for="name">Your Name:</label>
-      <input type="text" name="name" required />
-
-      <label for="email">Your Email:</label>
-      <input type="email" name="email" required />
-
-      <label for="date">Preferred Date:</label>
-      <input type="date" name="date" required />
-
-      <label for="group">Group Size:</label>
-      <input type="number" name="group" min="1" max="50" />
-
-      <label for="message">Message:</label>
-      <textarea name="message" rows="4"></textarea>
-
-      <button type="submit">Send Booking Request</button>
-    </form>
-
-    <p style="margin-top: 20px;">
-      Or email us directly at
-      <a href="mailto:thisisbelfasttours@gmail.com">thisisbelfasttours@gmail.com</a>
-    </p>
+  <header><img src="logo.png" alt="This is Belfast Walking Tours"></header>
+  <section class="hero" style="padding:4rem 1rem; text-align:center; background:#0a5c36; color:white;">
+    <h1>Book Your Tour</h1>
   </section>
-
+  <section class="container">
+    <p>Use the booking form below to reserve your spot. All tours begin at the Big Fish and last approx. 2 hours.</p>
+    <div style="text-align:center;margin:2rem 0;">
+      <a href="booking.html" class="btn">Secure Your Tour</a>
+    </div>
+  </section>
   <footer>
-    <p>&copy; 2025 This is Belfast Walking Tours</p>
+    <p>&copy; 2025 This is Belfast Walking Tours | <a href="https://www.tripadvisor.co.uk/Attraction_Review-g186470-d5585879-Reviews-This_is_Belfast_Walking_Tours-Belfast_Northern_Ireland.html" target="_blank">TripAdvisor</a></p>
   </footer>
-
 </body>
 </html>
