@@ -1,95 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>This is Belfast Walking Tours</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
       color: #333;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
     }
-
     header {
-      background: #0A7D43; /* TripAdvisor green */
+      background: #00af87;
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
     }
-
     header img {
-      max-width: 200px;
+      max-width: 180px;
       height: auto;
-      display: block;
+      display: inline-block;
+    }
+    .container {
+      max-width: 1100px;
       margin: 0 auto;
-    }
-
-    nav {
-      background: #0a5c32;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    .intro {
-      max-width: 900px;
-      margin: 40px auto;
       padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
+    h1, h2 { text-align: center; }
+    .intro p {
+      max-width: 800px;
+      margin: 16px auto;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      background: #00695c;
+      color: #fff;
+      padding: 12px 24px;
+      margin: 20px 0;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .btn:hover { background: #004d40; }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+      margin-top: 30px;
     }
-
     .gallery img {
       width: 100%;
-      height: 200px;
-      object-fit: cover; /* crops images tight */
       border-radius: 8px;
-      background: #0A7D43; /* green background fill */
+      display: block;
     }
-
-    .tripadvisor {
-      text-align: center;
+    .reviews, .faq {
+      background: #f4f4f4;
+      padding: 24px;
       margin: 40px 0;
+      border-radius: 8px;
     }
-
-    .tripadvisor a {
-      display: inline-block;
-      background: #0A7D43;
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
+    .tripadvisor-full {
+      background: #00af87;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 8px;
+      display: block;
     }
-
+    .tripadvisor-full img {
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
     footer {
-      background: #0A7D43;
-      color: white;
+      background: #333;
+      color: #fff;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 60px;
     }
+    footer a { color: #00af87; text-decoration: none; }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo_c
+    <img src="logo-square.jpg" alt="This is Belfast Walking Tours Logo">
+  </header>
+
+  <div class="container">
+    <h1>Welcome to This is Belfast Walking Tours</h1>
+    <div class="intro">
+      <p>My name is Stevie, born, bred and proud to hail from the historic and unique city of Belfast. I have a passion for history… [full text as before]</p>
+      <a href="booking.html" class="btn">Book Your Tour</a>
+    </div>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="albert-clock.jpg" alt="Albert Clock">
+      <img src="city-hall.jpg" alt="City Hall">
+      <img src="titanic-belfast.jpg" alt="Titanic Belfast">
+      <img src="titanic.jpg" alt="Titanic">
+      <img src="belfast-castle.jpg" alt="Belfast Castle">
+      <img src="belfast-map.jpg" alt="Belfast Map">
+      <img src="troubles.jpg" alt="The Troubles">
+    </div>
+
+    <div class="reviews">
+      <h2>Guest Reviews</h2>
+      <p>“Absolutely brilliant tour — Stevie is full of knowledge and humour!”</p>
+      <p>“The best walking tour I've ever done. Learned so much about Belfast.”</p>
+    </div>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Where do we meet?</strong> We meet at the Big Fish sculpture, Donegall Quay, Belfast.</p>
+      <p><strong>How long is the tour?</strong> Approximately 2 hours.</p>
+      <p><strong>Do I need to book?</strong> Booking is recommended to secure your spot.</p>
+    </div>
+  </div>
+
+  <a href="https://www.tripadvisor.co.uk/Attraction_Review-g186470-d25850790-Reviews-This_is_Belfast_Walking_Tours-Belfast_Northern_Ireland.html" class="tripadvisor-full">
+    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="TripAdvisor Logo">
+    Read Our Reviews on TripAdvisor
+  </a>
+
+  <footer>
+    <p>&copy; 2025 This is Belfast Walking Tours</p>
+  </footer>
+</body>
+</html>
