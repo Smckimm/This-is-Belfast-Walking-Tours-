@@ -8,104 +8,92 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      line-height: 1.6;
       background: #f9f9f9;
       color: #333;
     }
+
+    /* Logo Banner */
     header {
-      background: #00af87;
-      padding: 20px 0;
+      background: #0a5c36;
       text-align: center;
+      padding: 1rem;
     }
     header img {
       max-width: 200px;
+      width: 100%;
       height: auto;
-      display: inline-block;
-      border-radius: 8px;
     }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1, h2 {
+
+    /* Hero Section */
+    .hero {
+      background: url('cropped_images/belfast-map.jpg') no-repeat center/cover;
+      color: white;
       text-align: center;
+      padding: 6rem 1rem;
     }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    /* Content Sections */
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0a5c36;
+      margin-top: 0;
+    }
+
+    /* Gallery */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 10px;
+      gap: 1rem;
     }
     .gallery img {
       width: 100%;
-      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Booking Button */
+    .btn {
+      display: inline-block;
+      background: #0a5c36;
+      color: white;
+      padding: 0.75rem 1.5rem;
       border-radius: 6px;
-    }
-    .cta {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .cta a {
-      background: #00af87;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s;
     }
+    .btn:hover {
+      background: #087a4d;
+    }
+
+    /* Footer */
     footer {
-      background: #333;
-      color: #fff;
-      padding: 20px;
+      background: #0a5c36;
+      color: white;
       text-align: center;
+      padding: 1.5rem 1rem;
     }
     footer a {
-      color: #00af87;
-      text-decoration: none;
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <!-- Logo -->
+  <header>
+    <img src="cropped_images/logo.png" alt="This is Belfast Walking Tours Logo">
+  </header>
 
-<header>
-  <img src="logo.jpg" alt="This is Belfast Walking Tours">
-</header>
-
-<div class="container">
-  <h1>Welcome to This is Belfast Walking Tours</h1>
-  <p>
-    My name is Stevie, born, bred and proud to hail from the historic and unique city of Belfast.  
-    I have a passion for history, culture and notable people all of which Belfast has in abundance.  
-    Having grown up with the Troubles – being born in 1969 – I have the lived experience of what our city went through  
-    and how it has risen to rightly be one of the premium city breaks in the world!  
-    My tour also captures the origins of the city from the humble banks of the hidden River Farset through to rebellions,  
-    becoming a powerhouse of the industrial revolution including the most famous shipyard and ship in the world.  
-    My own history is intertwined with Belfast and I will be your storyteller of this awesome city with a personal touch and the world-famous Belfast humour – the craic!  
-    Being a tour guide is an honour with one of the best aspects being hearing your stories!  
-    It's my mission to ensure an informative and engaging experience for all with a good dose of the legendary Belfast welcome.  
-    I am fully qualified OCN Level 2 and a member of Tour Guides N Ireland providing insurance cover for your peace of mind.  
-    See you at the Big Fish!
-  </p>
-
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="albert-clock.jpg" alt="Albert Clock">
-    <img src="city-hall.jpg" alt="City Hall">
-    <img src="titanic-belfast.jpg" alt="Titanic Belfast">
-    <img src="titanic.jpg" alt="Titanic">
-    <img src="belfast-castle.jpg" alt="Belfast Castle">
-    <img src="belfast-map.jpg" alt="Belfast Map">
-    <img src="troubles.jpg" alt="The Troubles">
-  </div>
-
-  <div class="cta">
-    <a href="booking.html">Book Your Tour Now</a>
-  </div>
-</div>
-
-<footer>
-  <p>Read our reviews on <a href="https://www.tripadvisor.com/">TripAdvisor</a></p>
-  <p>© 2025 This is Belfast Walking Tours</p>
-</footer>
-
-</body>
-</html>
+  <!-- Hero -->
+  <section class="hero">
+    <
