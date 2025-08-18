@@ -77,4 +77,20 @@ body {
   width: 100%;
   height: auto;
   border-radius: 6px;
-  background: #
+  background: #228B22; /* green background for cropped look */
+  padding: 5px;
+}
+
+/* Footer */
+.site-footer {
+  background: #006400;
+  color: white;
+  padding: 30px 20px;
+}
+
+.tripadvisor-badge {
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto;
+  display: block;
+}
