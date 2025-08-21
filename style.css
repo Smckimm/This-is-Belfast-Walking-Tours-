@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8fdf8;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #0a5c2f;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+header .logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Section Titles */
+section h2 {
+  margin: 1.5rem 0;
+  color: #0a5c2f;
+  font-size: 1.6rem;
+}
+
+/* About Section */
+.about {
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Gallery */
+.gallery .images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Booking Button */
+.booking {
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #0a5c2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #097a3f;
+}
+
+/* Footer */
+footer {
+  background: #0a5c2f;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ffeb3b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
