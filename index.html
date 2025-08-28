@@ -1,92 +1,137 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is Belfast Walking Tours</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-}
+  <!-- Header -->
+  <header>
+    <img src="logo.jpg" alt="This is Belfast Walking Tours Logo">
+    <h1>This is Belfast Walking Tours</h1>
+  </header>
 
-/* Header */
-header {
-  background: #222;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Navigation -->
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-.logo-container {
-  text-align: center;
-}
+  <!-- Introduction -->
+  <section id="intro" class="intro">
+    <p>
+      I was born, raised, and made in Belfast and have a passion for the history, culture, and notable people — 
+      all of which Belfast and Northern Ireland have in abundance. Having grown up during the Troubles, 
+      being born in 1969, I have the lived experience of what our city went through and how it has risen 
+      to rightly be one of the premium city breaks in the world!  
+      My tour captures the origins of the city from the humble banks of the hidden River Farset through to rebellion, 
+      industry, conflict, and peace. Come and walk with me to hear the real story of Belfast.
+    </p>
+    <p>
+      <a href="https://www.tripadvisor.com/AttractionProductReview-g186470-d33370438-This_is_Belfast_Walking_Tours_Our_history_our_culture-Belfast_Northern_Ireland.html" 
+         target="_blank" 
+         style="font-weight: bold; color: #0b6623;">
+        Book on TripAdvisor →
+      </a>
+    </p>
+  </section>
 
-.logo {
-  max-width: 120px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="city-hall.jpg" alt="Belfast City Hall">
+      <img src="titanic.jpg" alt="Titanic">
+      <img src="titanicbuilding.jpg" alt="Titanic Building">
+      <img src="albert-clock(1).jpg" alt="Albert Clock">
+      <img src="belfast-castle.jpg" alt="Belfast Castle">
+    </div>
+  </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  <!-- Reviews -->
+  <section id="reviews">
+    <h2>What Visitors Say</h2>
+    <blockquote>
+      "A fascinating and heartfelt tour. Stevie brings Belfast’s history alive with warmth and honesty."
+    </blockquote>
+    <blockquote>
+      "The best walking tour I’ve ever done – a perfect mix of humour, history, and lived experience."
+    </blockquote>
+    <blockquote>
+      "Stevie’s knowledge and personal connection to the city make this tour unmissable."
+    </blockquote>
+  </section>
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <h3>How long is the tour?</h3>
+    <p>Approximately 2 hours.</p>
 
-nav ul li a:hover {
-  text-decoration: underline;
-}
+    <h3>Where do we meet?</h3>
+    <p>Outside Belfast City Hall, at the main entrance.</p>
 
-/* Hero / Intro Section */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: #e6f0ff;
-}
+    <h3>What should I bring?</h3>
+    <p>Comfortable shoes, a raincoat (this is Belfast!), and curiosity.</p>
+  </section>
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #003366;
-}
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@thisisbelfastwalkingtours.com">info@thisisbelfastwalkingtours.com</a></p>
+  </section>
 
-.hero p {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 This is Belfast Walking Tours</p>
+  </footer>
 
-.btn {
-  display: inline-block;
-  background: #003366;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="lightbox-img" src="" alt="">
+    <span class="next">&#10095;</span>
+  </div>
 
-.btn:hover {
-  background: #0055aa;
-}
+  <!-- JavaScript for Lightbox -->
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const galleryImages = document.querySelectorAll(".gallery-grid img");
+    const closeBtn = document.querySelector("#lightbox .close");
+    const prevBtn = document.querySelector("#lightbox .prev");
+    const nextBtn = document.querySelector("#lightbox .next");
+    let currentIndex = 0;
 
-/* Gallery */
-.gallery {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
+    galleryImages.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+        currentIndex = index;
+      });
+    });
 
-.gallery h2 {
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      lightboxImg.src = galleryImages[currentIndex].src;
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      lightboxImg.src = galleryImages[currentIndex].src;
+    });
+  </script>
+
+</body>
+</html>
