@@ -1,44 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This is Belfast Walking Tours</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo-container">
-      <img src="logo.jpg" alt="This is Belfast Walking Tours Logo" class="logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="booking.html">Book Now</a></li>
-        <li><a href="https://www.tripadvisor.com/AttractionProductReview-g186470-d33370438-This_is_Belfast_Walking_Tours_Our_history_our_culture-Belfast_Northern_Ireland.html" target="_blank">TripAdvisor</a></li>
-      </ul>
-    </nav>
-  </header>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section class="hero">
-    <h1>Welcome to This is Belfast Walking Tours</h1>
-    <p>Discover the history, culture and people of Belfast with Stevie.</p>
-    <a href="booking.html" class="btn">Book a Tour</a>
-  </section>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
 
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="city-hall.jpg" alt="Belfast City Hall">
-      <img src="titanic.jpg" alt="Titanic Memorial">
-      <img src="titanicbuilding.jpg" alt="Titanic Building">
-      <img src="albert-clock(1).jpg" alt="Albert Clock">
-      <img src="belfast-castle.jpg" alt="Belfast Castle">
-    </div>
-  </section>
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <footer>
-    <p>&copy; 2025 This is Belfast Walking Tours. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero / Intro Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e6f0ff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  background: #003366;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0055aa;
+}
+
+/* Gallery */
+.gallery {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery h2 {
