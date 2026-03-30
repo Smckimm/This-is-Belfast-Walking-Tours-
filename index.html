@@ -8,52 +8,77 @@ body {
   font-family: Arial, sans-serif;
   background: #0f172a;
   color: white;
-  text-align: center;
 }
 header {
-  padding: 60px 20px;
-  background: url('https://images.unsplash.com/photo-1600628422019-6c5b2dd8f04c') no-repeat center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1600628422019-6c5b2dd8f04c') center/cover;
 }
 h1 {
-  font-size: 2.5em;
-  margin: 0;
+  font-size: 3em;
 }
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
+  text-align: center;
 }
 .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 14px 30px;
   background: #f59e0b;
   color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .gallery img {
-  width: 90%;
-  max-width: 300px;
+  width: 300px;
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
+}
+.card {
+  background: #020617;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
 footer {
   padding: 20px;
-  font-size: 14px;
+  text-align: center;
   background: #020617;
 }
 </style></head><body><header>
   <h1>This is Belfast</h1>
-  <p>Walking Tours</p>
+  <p>Authentic Walking Tours of Belfast</p>
   <a class="button" href="https://www.getyourguide.com/">Book Your Tour</a>
 </header><section>
   <h2>About the Tour</h2>
-  <p>Explore Belfast’s rich history, from the Titanic Quarter to the Troubles and beyond. A local guide brings the city’s stories to life.</p>
+  <p>Discover Belfast through the eyes of a local guide. From the Titanic Quarter to the Troubles, experience the real stories that shaped the city.</p>
+</section><section>
+  <h2>Tour Highlights</h2>
+  <div class="card">📍 Big Fish</div>
+  <div class="card">📍 Custom House Square</div>
+  <div class="card">📍 Albert Clock</div>
+  <div class="card">📍 Joy’s Entry</div>
+  <div class="card">📍 Cathedral Quarter</div>
 </section><section class="gallery">
   <h2>Gallery</h2>
   <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
   <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b">
   <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</section><section>
+  <h2>Reviews</h2>
+  <div class="card">⭐️⭐️⭐️⭐️⭐️ "Brilliant tour – highly recommend!"</div>
+  <div class="card">⭐️⭐️⭐️⭐️⭐️ "Best way to see Belfast."</div>
+</section><section>
+  <h2>Book Your Tour</h2>
+  <a class="button" href="https://www.getyourguide.com/">Check Availability</a>
 </section><section>
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
